@@ -30,3 +30,6 @@ time.sleep(2)
 print(driver.title)
 
 print(driver.current_url)
+
+# ✅ Step 7: Close the browser session (not mandatory here as browser auto closes after script ends)
+driver.quit()
