@@ -13,7 +13,6 @@ driver.find_element(By.CSS_SELECTOR, "#confirmPassword").send_keys("Hello@1234")
 driver.find_element(By.XPATH, "//button[text()='Save New Password']").click()
 
 # Key Notes
-
 # Always prefer ID when available - fastest locator
 # CSS selectors are generally faster than XPATH
 # XPATH allows advanced DOM Traversal - great when no attributes are unique
