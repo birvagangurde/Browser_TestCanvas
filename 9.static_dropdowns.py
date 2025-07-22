@@ -1,9 +1,13 @@
+# 40.Static dropdown
+
 from selenium import webdriver
 
 #chrome driver
 from selenium.webdriver.chrome.service import Service
 #-- Chrome
 from selenium.webdriver.common.by import By
+
+
 from selenium.webdriver.support.select import Select
 
 # service_obj = Service("/Users/rahulshetty/documents/chromedriver")
