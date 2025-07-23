@@ -25,3 +25,27 @@ for country in countries:
     if country.text == "India":
         country.click()
         break
+
+# 42
+
+# print(driver.find_element(By.ID, "autosuggest").text)
+
+'''
+⚠️ Issue with .text:
+You cannot retrieve dynamically inserted values (like India) using .text.
+
+.text works only for static content present when the page loads.
+
+'''
+
+# print(driver.find_element(By.ID, "autosuggest").get_attribute("value"))
+
+assert driver.find_element(By.ID, "autosuggest").get_attribute("value") == "BASINDIA"
+
+'''   
+Input elements update their text via the DOM attribute value.
+get_attribute("value") pulls this updated info.
+
+Replaces manual output checks.
+If mismatch: test fails immediately, indicating a bug.
+'''
