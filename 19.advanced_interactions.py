@@ -43,3 +43,4 @@ You can click on dropdown options after hover using the same pattern.
 Use driver.maximize_window() for better view and debugging.
 ActionChains is ideal for testing dynamic menus, hoverable elements, and rich UI components.
 '''
+
