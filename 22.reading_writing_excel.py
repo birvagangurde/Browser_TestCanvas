@@ -1,6 +1,6 @@
 import openpyxl  # Import the library to read/write Excel files
 
-book = openpyxl.load_workbook("")
+book = openpyxl.load_workbook("C:/Users/BIRVA/Downloads/download.xlsx")
 sheet = book.active # Gets the active sheet
 
 Dict = {}
