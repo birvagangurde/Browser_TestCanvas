@@ -3,24 +3,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-import openpyxl
 
-# book = openpyxl.load_workbook("C:/Users/BIRVA/Downloads/download.xlsx")
-# sheet = book.active
-# Dict = {}
-#
-#
-file_path = "C:/Users/BIRVA/Downloads/download.xlsx"
+
+file_path = "/Users/rahulshetty/downloads/download.xlsx"
 fruit_name = "Apple"
-#
-# for i in range(1, sheet.max_row + 1):
-#     if sheet.cell(row=1, column=i).value == "price":
-#         Dict["col"] = i
-#
-# for i in range(1, sheet.max_row+1):
-#     for j in range(1, sheet.max_column+1):
-#         if sheet.cell(row=i, column=j).value == "Apple":
-#             Dict["row"] == i
 
 
 driver = webdriver.Chrome()
