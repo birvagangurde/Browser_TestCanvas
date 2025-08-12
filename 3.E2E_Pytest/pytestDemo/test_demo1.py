@@ -8,5 +8,5 @@ def test_firstProgram():
 #     print("Good Morning")
 
 
-def test_Greet():
+def test_SecondGreetCreditCard():
     print("Good Morning")

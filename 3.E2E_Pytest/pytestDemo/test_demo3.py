@@ -1,10 +1,13 @@
 
+import pytest
 
+
+@pytest.mark.smoke
 def test_firstProgram():
     msg = "Hello"
     assert msg == "Hi", "Test failed because strings do not match "
 
-
+@pytest.mark.xfail
 def test_SecondCreditCard():
     a = 4
     b = 6
