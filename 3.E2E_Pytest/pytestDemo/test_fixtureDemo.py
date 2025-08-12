@@ -5,7 +5,7 @@ import pytest
 # Method name can be anything (setup is common).
 
 
-@pytest.fixture()
+# @pytest.fixture()
 def setup():
     print("I will be executing first")  #setup code (runs before the test).
     yield   #→ separates setup and teardown in a single fixture.
