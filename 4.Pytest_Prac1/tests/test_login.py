@@ -7,11 +7,15 @@ def test_valid_login(browser):
     browser.find_element(By.ID, "user-name").clear()
     browser.find_element(By.ID, "user-name").send_keys("standard_user")
 
-    browser.find_element(By.ID, "password").send_keys("secret_sauce")
+    # browser.find_element(By.ID, "password").send_keys("secret_sauce")
+    browser.find_element(By.ID, "password").send_keys("wrong_password")
 
     browser.find_element(By.XPATH, "//input[@type='submit']").click()
 
-    assert "inventory" in browser.current_url
+    error_message = browser.find_element(By.XPATH, "//h3[@data-test='error']").text
+    print(error_message)
+
+    assert "Epic sadface" in error_message
 
 
 
