@@ -45,5 +45,5 @@ with open("amazon_headphones.csv", 'w', newline='', encoding='utf-8-sig') as fil
     writer.writerows(data)
 
 # Notes
-# Amazon pages are dynamic — always add delays or use WebDriverWait to avoid grabbing incomplete DOM.
+# Amazon pagesnew are dynamic — always add delays or use WebDriverWait to avoid grabbing incomplete DOM.
 # If prices are missing (sponsored listings or unavailable products), handle exceptions gracefully.
