@@ -1,3 +1,13 @@
+# any pytest file should start with test_
+# pytest method names should start with test
+# Any code should be wrapped in method only
+# Method name should make sense
+# -k stands for method names execution, -s logs in out put -v stands for more information metadata
+# you can run specific file with py.test <filename>
+# you can mark (tag) tests @pytest.mark.smoke and then run with -m
+# fixtures are used as setup and tear down methods for test cases - conftest file to generalise
+# fixture and make it available to all test cases
+
 import pytest
 
 

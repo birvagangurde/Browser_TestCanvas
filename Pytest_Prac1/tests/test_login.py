@@ -38,6 +38,13 @@ def test_inserting_cart(browser):
     login_page.add_to_cart()
     assert str(1) in login_page.get_cart_count()
 
+def test_logout(browser):
+    login_page = LoginPage(browser)
+    login_page.load_website()
+    login_page.login("standard_user", "secret_sauce")
+
+
+
 
 
 
